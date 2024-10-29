@@ -2,35 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Login Page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Sign in</h1>
-</header>
+<div class="container">
+    <header class="item-a">
+        <h3>Sign in</h3>
+    </header>
 
-<main>
-    <div class="card">
-        <div class="icon">
-            <!-- Utilisation de l'icône "contact" (vous pouvez utiliser une image ou une icône via FontAwesome par exemple) -->
-            <img src="https://img.icons8.com/ios-filled/50/212121/user.png" alt="Contact Icon">
+    <main class="item-b">
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/212121/user.png" alt="Contact Icon" class="contact-icon">
+            <p class="welcome">Welcome!</p>
+            <p class="signin-message">Please sign in to access content!</p>
         </div>
-        <p class="welcome-text">Welcome!</p>
-        <p class="sub-text">Please sign in to access content!</p>
-    </div>
-    
-    <form class="login-form">
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Sign in</button>
-    </form>
-</main>
+        <form class="login-form">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
 
-<footer>
-    <p>&copy; All rights reserved Thierno DIALLO</p>
-</footer>
+            <button type="submit" class="login-button">Sign in</button>
+        </form>
+    </main>
+
+    <footer class="item-d">
+        <p>&copy; 2024 - Thierno DIALLO</p>
+    </footer>
+</div>
 
 </body>
 </html>
